@@ -339,7 +339,7 @@
         background-color: #191919;
         color: hsl(0, 0%, 100%);
       }
-      @media screen and (min-with:768px) and (max-with:1024px) {
+      @media screen and (min-width:768px) and (max-width:1024px) {
 
         .list1,
       .list2,
@@ -348,6 +348,14 @@
       .list5,
       .list6{ width: 49%;}
         
+      }
+      @media screen and (max-width:768px){
+        .list1,
+      .list2,
+      .list3,
+      .list4,
+      .list5,
+      .list6{ width: 100%;} 
       }
       .cantainera{
         display: flex;
