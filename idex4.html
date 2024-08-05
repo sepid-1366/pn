@@ -42,6 +42,18 @@
         margin: 0px;
         padding: 0px;
       }
+      .menu{
+        display: none;
+      }
+      @media screen and (max-width:768px) {
+        .nav-main-first , .nav-right{
+          display: none;
+        }
+        .menu{
+          display: block;
+        }
+        
+      }
       .cantainer1,
       .but {
         display: flex;
@@ -95,35 +107,52 @@
         flex-direction: column;
         align-items: center;
         height: 100;
+        padding-top: 50px;
+        
       }
       .dan {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        width: 1000;
+        justify-content: space-around;
+        width:100%;
+        padding-top:50px;
       }
       .cantainer2 {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding-top: 50px;
       }
       .cantainer21 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 1100;
+        width: 90%;
       }
       .cantainer3 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
+      } 
+      .Embed{
+        position: relative;
+        top: 150px;
+      }
+      .btn2{
+        background-color: black;
+        color: white;
+        padding: 15px;
+        position: relative;
+        top: 150px;
+        border: radius 10px;
       }
       .cantainer31 {
         display: flex;
         flex-direction: column;
-        width: 700;
+        width: 50%;
       }
       .cantainer4 {
         display: flex;
@@ -446,6 +475,9 @@
                 <a href="#" class="log">Log in</a>
                 <a href="#" class="sign">Sign up</a>
               </div>
+              <div class="menu">
+                <img src="./imag/humburger.png" width="50px">
+              </div>
             </div>
           </nav>
         </div>
@@ -524,10 +556,10 @@
           ></video>
         </div>
         <div class="cantainer31">
-          <div>
+          <div class="Embed">
             <h1>Embeds smoothly. Reveals more.</h1>
           </div>
-          <div>
+          <div class="Embed">
             <h2>
               Collect more and better data. Embed forms where people see them,
               from web to email. Ask the right follow-up question at the right
@@ -535,7 +567,7 @@
             </h2>
           </div>
           <div>
-            <button class="btn2">signup</button>
+            <button  class="btn2">signup</button>
           </div>
         </div>
       </div>
